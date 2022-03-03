@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:backgroundTint="#283d51"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:paddingTop="50dp"
+            android:text="Security And Safety"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="FIRST"
+            android:textColor="@color/white"
+            android:textFontWeight="900"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="262dp"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="name"
+                android:paddingTop="10dp"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="16dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="16dp"
+                android:textSize="14sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="last name"
+
+                android:paddingTop="10dp"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="16dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="16dp"
+                android:textSize="14sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="phone"
+
+                android:paddingTop="10dp"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="16dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="16dp"
+                android:textSize="14sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email"
+
+                android:paddingTop="10dp"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="16dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="16dp"
+                android:textSize="14sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="car"
+
+                android:paddingTop="10dp"
+                android:drawableStart="@drawable/ic_baseline_directions_car_24"
+                android:drawableLeft="@drawable/ic_baseline_directions_car_24"
+                android:drawablePadding="16dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="16dp"
+                android:textSize="14sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_registration_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="number plate"
+
+                android:paddingTop="10dp"
+                android:drawableStart="@drawable/ic_baseline_badge_24"
+                android:drawableLeft="@drawable/ic_baseline_badge_24"
+                android:drawablePadding="16dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="16dp"
+                android:textSize="14sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:text="Continue"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_bg" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
